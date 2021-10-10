@@ -54,10 +54,14 @@ function hidePlaylist() {
   console.log("you clicked me");
   arrDown.classList.remove("bgDown");
 }
-
+//set audio progress 
+function setAudioProgress() {
+  audio.currentTime = (+progress.value * audio.duration) / 100;
+}
 // eventlisteners
 audio.addEventListener("timeupdate", updateProgress);
 playpause.addEventListener("click", toggleAudioStatus);
 closeBtn.addEventListener("click", hidePlaylist);
 playlist.addEventListener("swiped-up", showHidePlaylist);
 playlist.addEventListener("swiped-down", hidePlaylist);
+progress.addEventListener("change", setAudioProgress);
