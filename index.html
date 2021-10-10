@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- //boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-icons">
+        <i class="bx bx-chevron-down"></i>
+        <p>PLAYING NOW</p>
+        <i class="bx bxs-playlist"></i>
+      </div>
+      <div class="bg-blob">
+
+      </div>
+      <div class="album-art">
+        <img src="/img/stay.jpg" alt="">
+      </div>
+      <div class="song-headings">
+        <h2>STAY (with Justin Bieber)</h2>
+        <p>The Kid LAROI, Justin Bieber</p>
+      </div>
+      <div class="controls">
+        
+        <input type="range" value="0" step="0.1" min="0" max="100" class="progress" id="progress">
+        
+        
+      </div>
+      <div class="timestamps">
+        <span class="timestamp" id="timestamp">00:00</span>
+        <div class="timestamp2"></div>
+        
+      </div>
+      <div class="btm-controls">
+        <i class='bx bx-shuffle bx-flip-vertical' ></i>
+        <i class='bx bx-skip-previous bx-flip-vertical' ></i>
+        <div class="playbtn">
+          <img src="/img/play-button-arrowhead.png" id="playB" alt="">
+        </div>
+        <i class='bx bx-skip-next bx-flip-vertical' ></i>
+        <i class='bx bx-repeat bx-flip-vertical' ></i>
+      </div>
+      <audio src="/music/The Kid LAROI, Justin Bieber - Stay with Justin Bieber.mp3" id="audio"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

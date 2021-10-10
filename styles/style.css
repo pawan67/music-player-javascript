@@ -1,0 +1,194 @@
+body {
+  font-family: 'Poppins';
+  background-color: #131313;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 311px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-icons p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.top-icons .bxs-playlist {
+  color: white;
+}
+
+.container {
+  z-index: -10;
+}
+
+.bg-blob {
+  position: absolute;
+  top: 0;
+  left: -17px;
+  height: 300px;
+  width: 300px;
+  background-color: #ceee4f;
+  z-index: -1;
+  border-radius: 0 0 60px 0;
+}
+
+.album-art {
+  width: 311px;
+  margin: auto;
+}
+
+.album-art img {
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.song-headings {
+  width: 311px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.song-headings h2 {
+  color: white;
+}
+
+.song-headings p {
+  color: #a1a1a1;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 311px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.controls input {
+  margin: 0;
+}
+
+.timestamps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 18px;
+  width: 311px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timestamps span {
+  color: white;
+  font-size: 12px;
+}
+
+.btm-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 311px;
+  margin: auto;
+  margin-top: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btm-controls i {
+  color: white;
+  font-size: 20px;
+}
+
+.btm-controls .playbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #ceee4f;
+}
+
+.btm-controls .playbtn img {
+  width: 40%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 311px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3fd60), to(#d1ff51));
+  background-image: linear-gradient(#f3fd60, #d1ff51);
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #dbff0c;
+  cursor: ew-resize;
+  -webkit-box-shadow: 0 0 2px 0 #555;
+          box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */

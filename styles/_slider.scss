@@ -1,0 +1,34 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    // margin-right: 15px;
+    margin: 0;
+    width: 311px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#f3fd60, #d1ff51);
+    // background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #dbff0c;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    // margin: 0;
+  }
+
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  

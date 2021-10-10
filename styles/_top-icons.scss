@@ -1,0 +1,105 @@
+.top-icons{
+    display: flex;
+    margin: auto;
+    width: 311px;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+    p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .bxs-playlist{
+        color: white;
+    }
+}
+.container{
+    // background-color: rgb(20, 20, 20);
+    z-index: -10;
+}
+.bg-blob{
+    
+    position: absolute;
+    top: 0;
+    left: -17px;
+    height: 300px;
+    width: 300px;
+    background-color: #ceee4f;
+    z-index: -1;
+    border-radius: 0 0 60px 0;
+}
+.album-art{
+    width: 311px;
+    margin: auto;
+    
+    img{
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 30px ;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+.song-headings{
+    width: 311px;
+    margin: auto;
+    margin-top: 40px;
+    h2{
+        color: white;
+    }
+    p{
+        color: rgb(161, 161, 161);
+        margin-top: 2px;
+        font-size: 12px;
+    }
+}
+.controls{
+    display: flex;
+    margin: auto;
+    width: 311px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+    input{
+        margin: 0;
+    }
+}
+.timestamps{
+    display: flex;
+    margin: auto;
+    margin-top: 18px;
+    width: 311px;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.btm-controls{
+    display: flex;
+    align-items: center;
+    width: 311px;
+    margin: auto;
+    margin-top: 65px;
+
+    justify-content: space-between;
+    i{
+        color: white;
+        font-size: 20px;
+    }
+    .playbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #ceee4f;
+        img{
+            width: 40%;
+        }
+    }
+}
