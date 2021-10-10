@@ -176,7 +176,7 @@ body {
   height: 52%;
   right: 0;
   width: 100vw;
-  bottom: -400px;
+  bottom: -370px;
   -webkit-transition: all .40s ease-in;
   transition: all .40s ease-in;
   border-radius: 20px 20px 0 0;
@@ -184,6 +184,15 @@ body {
   padding: 0 40px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.playlist .bar {
+  height: 4px;
+  width: 140px;
+  background-color: #202020;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .playlist .togglePl {

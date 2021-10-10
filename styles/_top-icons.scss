@@ -117,13 +117,24 @@
     height: 52%;
     right: 0;
     width: 100vw;
-    bottom: -400px;
+    bottom: -370px;
     transition: all .40s ease-in;
     border-radius: 20px 20px 0 0;
     // height: 100vh;
     background-color: white;
     padding: 0 40px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    .bar{
+        height: 4px;
+        width: 140px;
+        background-color: rgb(32, 32, 32);
+        // position: absolute;
+        
+        border-radius: 10px;
+        // top: 20px;
+        margin: auto;
+        margin-top: 10px;
+    }
     .togglePl{
         bottom: 0;
     }
