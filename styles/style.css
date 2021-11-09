@@ -1,13 +1,75 @@
 body {
   font-family: 'Poppins';
-  background-color: #131313;
+  background-color: black;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
 }
 
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#pawan67 {
+  position: fixed;
+  font-size: 350px;
+  color: transparent;
+  font-weight: 800;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: white;
+  cursor: pointer;
+}
+
+@media (maxwidth: 400px) {
+  #pawan67 {
+    display: none;
+  }
+}
+
+#pawan67:hover {
+  z-index: 10000;
+  -webkit-text-stroke: 0px;
+  color: #ceee4f;
+}
+
+#message {
+  color: #fff;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+@media (maxwidth: 400px) {
+  #message {
+    display: none;
+  }
+}
+
+#message a {
+  margin-left: 5px;
+  color: #ceee4f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  height: 844px;
+  width: 390px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1000 !important;
+  overflow: hidden;
+  background-color: #1f1f1f;
 }
 
 .top-icons {
@@ -32,8 +94,8 @@ body {
 
 .top-icons i {
   font-size: 23px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .top-icons .bxs-playlist {
@@ -175,10 +237,10 @@ body {
   position: absolute;
   height: 52%;
   right: 0;
-  width: 100vw;
+  width: 390px;
   bottom: -380px;
-  -webkit-transition: all .40s ease-in;
-  transition: all .40s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   border-radius: 20px 20px 0 0;
   background-color: white;
   padding: 0 40px;

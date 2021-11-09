@@ -1,9 +1,45 @@
 body{
     font-family: 'Poppins';
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 *{
     margin: 0;
     box-sizing: border-box;
+}
+#pawan67{
+    @media (maxwidth: 400px){
+        display: none;
+    }
+    position: fixed;
+    font-size: 350px;
+    color: transparent;
+    font-weight: 800;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    &:hover{
+        z-index: 10000;
+        -webkit-text-stroke: 0px;
+        color: #ceee4f;
+    }
+    cursor: pointer;
+}
+#message{
+    @media (maxwidth: 400px){
+        display: none;
+    }
+    color: #fff;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    a{
+        margin-left: 5px;
+        color: #ceee4f;
+        text-decoration: none;
+        font-weight: 500;
+    }
 }

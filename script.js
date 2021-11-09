@@ -11,6 +11,53 @@ const playlistBtn = document
   .querySelector(".bxs-playlist")
   .addEventListener("click", showHidePlaylist);
 const playlist = document.querySelector(".playlist");
+const title = document.getElementById("title");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+
+const songs = [
+  "holdon",
+  "lostinfire",
+  "often",
+  "onethingright",
+  "prayforme",
+  "stay",
+];
+
+let songIndex = 5;
+
+loadSong(songs[songIndex]);
+
+function loadSong(song) {
+  title.innerText = song;
+  audio.src = `music/${song}.mp3`;
+}
+
+//prev song
+function prevSong() {
+  songIndex--;
+
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+
+  loadSong(songs[songIndex]);
+
+  toggleAudioStatus();
+}
+//next song
+function nextSong() {
+  songIndex++;
+
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+
+  loadSong(songs[songIndex]);
+
+  toggleAudioStatus();
+}
 
 function toggleAudioStatus() {
   if (audio.paused) {
@@ -54,7 +101,7 @@ function hidePlaylist() {
   console.log("you clicked me");
   arrDown.classList.remove("bgDown");
 }
-//set audio progress 
+//set audio progress
 function setAudioProgress() {
   audio.currentTime = (+progress.value * audio.duration) / 100;
 }
@@ -65,3 +112,5 @@ closeBtn.addEventListener("click", hidePlaylist);
 playlist.addEventListener("swiped-up", showHidePlaylist);
 playlist.addEventListener("swiped-down", hidePlaylist);
 progress.addEventListener("change", setAudioProgress);
+nextBtn.addEventListener('click', nextSong)
+prevBtn.addEventListener('click', prevSong)
