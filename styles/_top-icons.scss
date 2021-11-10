@@ -1,11 +1,12 @@
 .container {
   height: 844px;
   width: 390px;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   z-index: 1000 !important;
   overflow: hidden;
   background-color: rgb(31, 31, 31);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   @media (max-width: 500px){
     border-radius: 0 !important;
     // display: none;
@@ -140,7 +141,7 @@
   height: 52%;
   right: 0;
   width: 390px;
-  bottom: -380px;
+  bottom: -405px;
   transition: all 0.4s ease-in;
   border-radius: 20px 20px 0 0;
   // height: 100vh;

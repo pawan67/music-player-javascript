@@ -65,11 +65,13 @@ body {
 .container {
   height: 844px;
   width: 390px;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   z-index: 1000 !important;
   overflow: hidden;
   background-color: #1f1f1f;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 @media (max-width: 500px) {
@@ -246,7 +248,7 @@ body {
   height: 52%;
   right: 0;
   width: 390px;
-  bottom: -380px;
+  bottom: -405px;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   border-radius: 20px 20px 0 0;
