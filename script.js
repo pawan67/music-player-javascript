@@ -145,7 +145,7 @@ function showHidePlaylist() {
 }
 // hide playlist
 function hidePlaylist() {
-  playlist.style.bottom = "-380px";
+  playlist.style.bottom = "-410px";
   console.log("you clicked me");
   arrDown.classList.remove("bgDown");
 }

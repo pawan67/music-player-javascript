@@ -1,5 +1,6 @@
+@import url("https://use.typekit.net/rig3fih.css");
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   background-color: black;
   overflow: hidden;
   display: -webkit-box;
@@ -22,11 +23,12 @@ body {
 
 #pawan67 {
   position: fixed;
-  font-size: 350px;
+  font-size: 200px;
   color: transparent;
   font-weight: 800;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: white;
+  font-family: termina, sans-serif;
   cursor: pointer;
 }
 
@@ -39,7 +41,7 @@ body {
 #pawan67:hover {
   z-index: 10000;
   -webkit-text-stroke: 0px;
-  color: #ceee4f;
+  color: #c9c9c9;
 }
 
 #message {
@@ -248,7 +250,7 @@ body {
   height: 52%;
   right: 0;
   width: 390px;
-  bottom: -405px;
+  bottom: -410px;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   border-radius: 20px 20px 0 0;
