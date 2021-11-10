@@ -30,7 +30,7 @@ body {
   cursor: pointer;
 }
 
-@media (maxwidth: 400px) {
+@media (maxw-idth: 400px) {
   #pawan67 {
     display: none;
   }
@@ -49,7 +49,7 @@ body {
   bottom: 50px;
 }
 
-@media (maxwidth: 400px) {
+@media (max-width: 400px) {
   #message {
     display: none;
   }
@@ -70,6 +70,14 @@ body {
   z-index: 1000 !important;
   overflow: hidden;
   background-color: #1f1f1f;
+}
+
+@media (max-width: 500px) {
+  .container {
+    border-radius: 0 !important;
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
 .top-icons {

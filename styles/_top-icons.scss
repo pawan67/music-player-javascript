@@ -6,6 +6,12 @@
   z-index: 1000 !important;
   overflow: hidden;
   background-color: rgb(31, 31, 31);
+  @media (max-width: 500px){
+    border-radius: 0 !important;
+    // display: none;
+    height: 100vh ;
+    width: 100vw ;
+  }
 }
 .wrapperr {
 //   position: relative;
