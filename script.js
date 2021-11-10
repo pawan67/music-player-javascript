@@ -14,7 +14,9 @@ const playlist = document.querySelector(".playlist");
 const title = document.getElementById("title");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
-
+const subTitlep = document.getElementById("sub-title");
+const albumArt = document.getElementById("album-art-image");
+const randomNum = Math.floor(Math.random() * 6);
 
 const songs = [
   "holdon",
@@ -25,13 +27,55 @@ const songs = [
   "stay",
 ];
 
-let songIndex = 5;
+const songsTitle = [
+  "Hold On",
+  "Lost in the Fire",
+  "Often",
+  "One Thing Right",
+  "Pray For Me",
+  "Stay",
+];
+const subTitle = [
+  "Justin Bieber",
+  "The Weeknd & Gesaffelstein",
+  "The Weeknd",
+  "Marshmello & Kane Brown",
+  "Pray For Me",
+  "The Kid LAROI & Justin Bieber",
+];
+let songIndex = 1;
+const shuffleBtn = document
+  .getElementById("shuffle-btn")
+  .addEventListener("click", () => {
+    songIndex ++;
+
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+
+  loadSong(songs[songIndex]);
+  loadSongTitle(songsTitle[songIndex]);
+  loadSubTitle(subTitle[songIndex]);
+
+  toggleAudioStatus();
+  });
 
 loadSong(songs[songIndex]);
+loadSongTitle(songsTitle[songIndex]);
+loadSubTitle(subTitle[songIndex]);
 
 function loadSong(song) {
-  title.innerText = song;
+  // title.innerText = song;
   audio.src = `music/${song}.mp3`;
+  albumArt.src = `img/${song}.jpg`;
+}
+function loadSongTitle(e) {
+  title.innerText = e;
+  console.log(e);
+}
+function loadSubTitle(e) {
+  subTitlep.innerText = e;
+  console.log(e);
 }
 
 //prev song
@@ -43,6 +87,8 @@ function prevSong() {
   }
 
   loadSong(songs[songIndex]);
+  loadSongTitle(songsTitle[songIndex]);
+  loadSubTitle(subTitle[songIndex]);
 
   toggleAudioStatus();
 }
@@ -55,6 +101,8 @@ function nextSong() {
   }
 
   loadSong(songs[songIndex]);
+  loadSongTitle(songsTitle[songIndex]);
+  loadSubTitle(subTitle[songIndex]);
 
   toggleAudioStatus();
 }
@@ -112,5 +160,5 @@ closeBtn.addEventListener("click", hidePlaylist);
 playlist.addEventListener("swiped-up", showHidePlaylist);
 playlist.addEventListener("swiped-down", hidePlaylist);
 progress.addEventListener("change", setAudioProgress);
-nextBtn.addEventListener('click', nextSong)
-prevBtn.addEventListener('click', prevSong)
+nextBtn.addEventListener("click", nextSong);
+prevBtn.addEventListener("click", prevSong);
