@@ -25,6 +25,9 @@ const songs = [
   "onethingright",
   "prayforme",
   "stay",
+  "bluekny",
+  "srk",
+  "starboy"
 ];
 
 const songsTitle = [
@@ -34,6 +37,9 @@ const songsTitle = [
   "One Thing Right",
   "Pray For Me",
   "Stay",
+  "Eiffel 65 - Blue (KNY Factory Remix)",
+  "Young Shah Rukh Khan",
+  "The Weeknd - STARBOY (Fatih Basoglu Remix)"
 ];
 const subTitle = [
   "Justin Bieber",
@@ -42,8 +48,12 @@ const subTitle = [
   "Marshmello & Kane Brown",
   "Pray For Me",
   "The Kid LAROI & Justin Bieber",
+  "Trap Nation",
+  "Tesher",
+  "HouseMusicHD"
+
 ];
-let songIndex = 1;
+let songIndex = 2;
 const shuffleBtn = document
   .getElementById("shuffle-btn")
   .addEventListener("click", () => {

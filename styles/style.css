@@ -249,7 +249,7 @@ body {
   position: absolute;
   height: 52%;
   right: 0;
-  width: 390px;
+  width: 100%;
   bottom: -410px;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
