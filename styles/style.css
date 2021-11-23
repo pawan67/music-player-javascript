@@ -64,6 +64,25 @@ body {
   font-weight: 500;
 }
 
+#display-message {
+  color: white;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+@media (min-height: 890px) {
+  #display-message {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  #display-message {
+    display: none;
+  }
+}
+
 .container {
   height: 844px;
   width: 390px;
