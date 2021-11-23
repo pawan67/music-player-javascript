@@ -38,7 +38,7 @@ const songsTitle = [
   "Pray For Me",
   "Stay",
   "Eiffel 65 - Blue (KNY Factory Remix)",
-  "Young Shah Rukh Khan",
+  "Young Shah Rukh",
   "The Weeknd - STARBOY (Fatih Basoglu Remix)"
 ];
 const subTitle = [
