@@ -53,7 +53,7 @@ const subTitle = [
   "HouseMusicHD"
 
 ];
-let songIndex = 2;
+let songIndex = 7;
 const shuffleBtn = document
   .getElementById("shuffle-btn")
   .addEventListener("click", () => {
