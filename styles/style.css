@@ -66,9 +66,14 @@ body {
 
 #display-message {
   color: white;
+  font-size: .8rem;
   position: absolute;
   top: 3rem;
   left: 3rem;
+}
+
+#display-message p {
+  color: #ceee4f;
 }
 
 @media (min-height: 890px) {
