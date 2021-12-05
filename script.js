@@ -17,6 +17,7 @@ const prevBtn = document.getElementById("prevBtn");
 const subTitlep = document.getElementById("sub-title");
 const albumArt = document.getElementById("album-art-image");
 const randomNum = Math.floor(Math.random() * 6);
+var link = document.querySelector("link[rel~='icon']");
 
 const songs = [
   "holdon",
@@ -27,7 +28,8 @@ const songs = [
   "stay",
   "bluekny",
   "srk",
-  "starboy"
+  "starboy",
+  "maroon5cold"
 ];
 
 const songsTitle = [
@@ -39,7 +41,8 @@ const songsTitle = [
   "Stay",
   "Eiffel 65 - Blue (KNY Factory Remix)",
   "Young Shah Rukh",
-  "The Weeknd - STARBOY (Fatih Basoglu Remix)"
+  "The Weeknd - STARBOY",
+  "Maroon 5 - Cold ft. Future"
 ];
 const subTitle = [
   "Justin Bieber",
@@ -50,10 +53,11 @@ const subTitle = [
   "The Kid LAROI & Justin Bieber",
   "Trap Nation",
   "Tesher",
-  "HouseMusicHD"
+  "HouseMusicHD",
+  "Maroon 5"
 
 ];
-let songIndex = 7;
+let songIndex = 9;
 const shuffleBtn = document
   .getElementById("shuffle-btn")
   .addEventListener("click", () => {
@@ -75,17 +79,19 @@ loadSongTitle(songsTitle[songIndex]);
 loadSubTitle(subTitle[songIndex]);
 
 function loadSong(song) {
+  
   // title.innerText = song;
   audio.src = `music/${song}.mp3`;
   albumArt.src = `img/${song}.jpg`;
+  link.href = `img/${song}.jpg`;
 }
 function loadSongTitle(e) {
+  document.title = e;
   title.innerText = e;
-  console.log(e);
+ 
 }
 function loadSubTitle(e) {
   subTitlep.innerText = e;
-  console.log(e);
 }
 
 //prev song
@@ -121,7 +127,6 @@ function toggleAudioStatus() {
   if (audio.paused) {
     audio.play();
     playpause.innerHTML = "<img src='/img/pause.png' id='pauseB' ></img>";
-    console.log(playpause);
   } else {
     audio.pause();
     playpause.innerHTML =
@@ -142,7 +147,6 @@ function updateProgress() {
   }
 
   timestamp.innerHTML = `${mins}:${secs}`;
-  console.log(secs);
 }
 
 //playlist
@@ -156,7 +160,6 @@ function showHidePlaylist() {
 // hide playlist
 function hidePlaylist() {
   playlist.style.bottom = "-410px";
-  console.log("you clicked me");
   arrDown.classList.remove("bgDown");
 }
 //set audio progress
